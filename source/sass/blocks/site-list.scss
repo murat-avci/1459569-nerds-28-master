@@ -1,0 +1,18 @@
+.site-list {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.site-list__item {
+  &:nth-child(2) {
+    margin-left: 44px;
+  }
+
+  &:nth-child(3) {
+    margin-left: 48px;
+  }
+
+  &:last-child {
+    margin-left: 44px;
+  }
+}

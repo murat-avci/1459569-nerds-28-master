@@ -1,0 +1,23 @@
+.page-header {
+  position: relative;
+  padding-top: 49px;
+  padding-right: 143px;
+  padding-left: 140px;
+  background-color: $light-gray;
+}
+
+.page-header__wrapper {
+  display: flex;
+}
+
+.page-header__slider {
+  position: absolute;
+  bottom: 96px;
+  left: 50%;
+  margin-right: 17px;
+  transform: translateX(-50%);
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
