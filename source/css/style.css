@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto.woff2") format("woff2"), url("../fonts/roboto.woff") format("woff");
+  display: swap;
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/robotobold.woff2") format("woff2"), url("../fonts/robotobold.woff") format("woff");
+  display: swap;
+  font-weight: 700;
+  font-style: normal; }
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none; }
+
+img {
+  display: block; }
+
+.page__body {
+  font-family: "Roboto"; }
+
+.page-header {
+  position: relative;
+  padding-top: 49px;
+  padding-right: 143px;
+  padding-left: 140px;
+  background-color: #eeeeee; }
+
+.page-header__wrapper {
+  display: flex; }
+
+.page-header__slider {
+  position: absolute;
+  bottom: 96px;
+  left: 50%;
+  margin-right: 17px;
+  transform: translateX(-50%); }
+  .page-header__slider:last-child {
+    margin-right: 0; }
+
+.main-nav {
+  display: flex;
+  justify-content: flex-start;
+  flex-basis: 100%;
+  align-items: center; }
+
+.main-nav__list {
+  margin-left: 202px; }
+
+.main-nav__cart {
+  display: flex;
+  justify-self: flex-end;
+  margin-right: 0;
+  margin-left: auto; }
+
+.site-list {
+  display: flex;
+  justify-content: flex-start; }
+
+.site-list__item:nth-child(2) {
+  margin-left: 44px; }
+
+.site-list__item:nth-child(3) {
+  margin-left: 48px; }
+
+.site-list__item:last-child {
+  margin-left: 44px; }
+
+.slide__item:first-child {
+  display: block; }
+
+.slide__item:nth-child(2) {
+  display: none; }
+
+.slide__item:last-child {
+  display: none; }
+
+.slide__item-wrapper {
+  display: flex; }
+
+.slide__image img {
+  width: 100%; }
+
+.slide__wrap {
+  margin: auto 0;
+  width: 447px; }
+  .slide__wrap span {
+    white-space: normal; }
+
+.slide__title {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  margin-bottom: 25px; }
+
+.slide__text {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #283136;
+  margin-bottom: 38px; }
+  .slide__text span {
+    white-space: nowrap; }
+
+.slide__btn {
+  padding: 17px 54px 15px;
+  background-color: #fb565a;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 18px;
+  border-radius: 3px;
+  text-decoration: none; }
+
+/*# sourceMappingURL=style.css.map */
