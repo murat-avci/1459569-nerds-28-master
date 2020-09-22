@@ -4,6 +4,10 @@
   padding-right: 143px;
   padding-left: 140px;
   background-color: $light-gray;
+
+  &--catalog {
+    min-height: 355px;
+  }
 }
 
 .page-header__wrapper {
@@ -20,4 +24,14 @@
   &:last-child {
     margin-right: 0;
   }
+}
+
+.page-header__main-title {
+  display: block;
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: medium;
+  text-align: center;
+  margin-top: 78px;
+  margin-bottom: 108px;
 }

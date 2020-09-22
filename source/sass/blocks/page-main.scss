@@ -11,3 +11,35 @@
   grid-template-columns: 2fr 1fr;
   margin-bottom: 73px;
 }
+
+.page-main__catalog {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 55px 140px 60px;
+}
+
+.page-main__options {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 5;
+  width: 260px;
+}
+
+.page-main__sort {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 48px;
+}
+
+.page-main__sort-list {
+  display: flex;
+  margin-left: 282px;
+}
+
+.page-main__products {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 42px;
+  row-gap: 30px;
+}
