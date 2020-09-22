@@ -1,0 +1,17 @@
+.main-nav {
+  display: flex;
+  justify-content: flex-start;
+  flex-basis: 100%;
+  align-items: center;
+}
+
+.main-nav__list {
+  margin-left: 202px;
+}
+
+.main-nav__cart {
+  display: flex;
+  justify-self: flex-end;
+  margin-right: 0;
+  margin-left: auto;
+}
