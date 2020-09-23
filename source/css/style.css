@@ -174,7 +174,10 @@ img {
 .page-main__sort {
   display: flex;
   justify-content: flex-start;
-  margin-bottom: 48px; }
+  margin-bottom: 48px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content; }
 
 .page-main__sort-list {
   display: flex;
