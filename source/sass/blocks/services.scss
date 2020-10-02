@@ -1,4 +1,73 @@
 .services__list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 100px;
+  font-family: inherit;
 }
+
+.services__illustration {
+  margin-bottom: 25px;
+}
+
+.services__title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.services__description {
+  font-size: 16px;
+  line-height: 24px;
+  color: $dark-gray;
+  width: 260px;
+  margin-bottom: 32px;
+}
+
+.services__btn {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: $basic-white;
+  background-color: $special-red;
+  border: none;
+  border-radius: 3px;
+  padding: 17px 40px 15px 39px;
+
+  &:hover {
+    background-color: $special-red1;
+  }
+
+  &:active {
+    background-color: $special-red2;
+    color: rgba($color: $basic-white, $alpha: 0.3);
+  }
+
+  &--green {
+    background-color: $light-green;
+
+    &:hover {
+      background-color: $special-green1;
+    }
+
+    &:active {
+      background-color: $special-green2;
+    }
+  }
+
+  &--yellow {
+    background-color: $dark-yellow;
+
+    &:hover {
+      background-color: $special-yellow1;
+    }
+
+    &:active {
+      background-color: $special-yellow2;
+    }
+  }
+}
+

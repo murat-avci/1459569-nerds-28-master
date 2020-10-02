@@ -1,0 +1,42 @@
+.stats {
+  font-family: inherit;
+}
+
+.stats__description {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-top: 37px;
+}
+
+.stats__table {
+  margin-top: 31px;
+}
+
+.stats__efficiency-percent {
+  font-size: 45px;
+  line-height: 64px;
+  font-weight: 700;
+  color: $dark-gray;
+}
+
+.stats__efficiency-value {
+  border-collapse: collapse;
+  width: 120px;
+  text-align: left;
+
+  & sup {
+    font-size: 26px;
+    line-height: 40px;
+    font-weight: 700;
+  }
+}
+
+.stats__efficiency-text {
+  font-size: 16px;
+  line-height: 18px;
+  color: $dark-gray;
+  height: 47px;
+  vertical-align: bottom;
+}

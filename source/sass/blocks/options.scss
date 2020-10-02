@@ -1,0 +1,231 @@
+.options {
+  font-family: inherit;
+}
+
+.options__item {
+  border: none;
+
+  &:nth-child(2) {
+    margin-top: 54px;
+    padding-top: 16px;
+  }
+
+  &:last-of-type {
+    margin-top: 46px;
+    padding-top: 16px;
+  }
+}
+
+.options__title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.options__range-controls {
+  position: relative;
+  width: 260px;
+  height: 80px;
+  background-color: $light-gray;
+  border-radius: 3px;
+  margin-top: 48px;
+}
+
+.options__slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.options__bar {
+  position: absolute;
+  content: "";
+  top: 50%;
+  transform: translateY(-50%);
+  left: 33px;
+  width: 205px;
+  height: 2px;
+  background-color: $special-gray6;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 138px;
+    height: 2px;
+    background-color: $light-green;
+  }
+}
+
+.options__toggle-min,
+.options__toggle-max {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-color: $basic-white;
+  border-radius: 50%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 4px;
+    height: 4px;
+    background-color: $special-gray7;
+    border-radius: 50%;
+  }
+}
+
+.options__toggle-min {
+  left: 18px;
+}
+
+.options__toggle-max {
+  right: 80px;
+}
+
+.options__list-item {
+  margin-bottom: 21px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.options__input-price {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 22px;
+  color: $dark-gray;
+  text-align: center;
+  width: 80px;
+  height: 38px;
+  border: none;
+  background-color: $light-gray;
+  border-radius: 3px;
+  margin-top: 14px;
+  margin-left: 11px;
+}
+
+.options__label-price {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 22px;
+  color: $dark-gray;
+  margin-right: 30px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.options__label-cell {
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  line-height: 19px;
+  color: $dark-gray;
+  padding-left: 36px;
+  cursor: pointer;
+
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    border-radius: 50%;
+  }
+
+  &::before {
+    width: 25px;
+    height: 25px;
+    background-color: $basic-white;
+    border: 4px solid rgba($color: $special-gray8, $alpha: 0.4);
+  }
+
+  &::after {
+    left: 8px;
+    width: 9px;
+    height: 9px;
+  }
+}
+
+.options__input-cell {
+  display: none;
+}
+
+.options__input-cell[type="radio"]:checked + .options__label-cell {
+  &::after {
+    background-color: rgba($color: $special-gray8, $alpha: 0.4);
+    border: 2px solid rgba($color: $special-gray8, $alpha: 0.4);
+  }
+}
+
+.options__label-features {
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  line-height: 19px;
+  color: $dark-gray;
+  padding-left: 36px;
+  cursor: pointer;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    background-color: $basic-white;
+    border: 2px solid rgba($color: $special-gray8, $alpha: 0.4);
+    border-radius: 3px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    bottom: 8px;
+    width: 20px;
+    height: 11px;
+  }
+}
+
+.options__input-features {
+  display: none;
+}
+
+.options__input-features[type="checkbox"]:checked + .options__label-features {
+  &::after {
+    border: 4px solid rgba($color: $special-gray8, $alpha: 0.4);
+    border-top-style: none;
+    border-right-style: none;
+    transform: rotate(-45deg);
+  }
+}
+
+.options__form-button {
+  display: inline-block;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  padding: 17px 89px 15px 88px;
+  margin-top: 50px;
+  border: none;
+  border-radius: 3px;
+  background-color: $light-gray;
+  cursor: pointer;
+}

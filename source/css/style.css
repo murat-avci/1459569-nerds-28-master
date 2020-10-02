@@ -198,20 +198,200 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr; }
 
+.page-footer {
+  position: relative; }
+
+.page-footer__address {
+  position: relative; }
+
 .page-footer__map {
-  max-width: 1440px; }
+  max-width: 1440px;
+  width: 100%;
+  min-height: 416px;
+  background-image: url("../img/map-1.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: auto; }
+
+.page-footer__map-marker {
+  position: absolute;
+  top: 86px;
+  left: 822px; }
+
+.page-footer__address-card {
+  position: absolute;
+  top: 54px;
+  left: 140px;
+  background-color: #ffffff;
+  width: 319px;
+  height: 308px;
+  padding: 49px 50px 47px; }
+
+.page-footer__address-card-title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  margin-bottom: 23px; }
+
+.page-footer__address-card-text {
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+  margin-bottom: 16px; }
+
+.page-footer__address-card-tel {
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+  margin-bottom: 37px; }
+
+.page-footer__address-link {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #fb565a;
+  color: #ffffff;
+  padding: 17px 44px 15px;
+  border-radius: 3px; }
 
 .page-footer__social {
-  padding: 68px 0; }
+  padding: 68px 140px; }
 
 .social {
   display: flex; }
+
+.social__wrapper {
+  order: 2; }
 
 .social__list {
   order: 1;
   display: flex; }
 
-.social__wrapper {
-  order: 2; }
+.social__item {
+  width: 81px;
+  height: 81px;
+  border: 40px solid #e1e1e1;
+  border-radius: 50%;
+  margin-right: 9px; }
+  .social__item:last-child {
+    margin-right: 0; }
+
+.popup {
+  display: none;
+  position: absolute;
+  top: 1706px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  width: 960px;
+  height: 590px;
+  background-color: #ffffff;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); }
+
+.popup__wrap {
+  position: relative; }
+
+.popup__close {
+  position: absolute;
+  right: 90px;
+  top: 78px;
+  width: 21px;
+  height: 21px;
+  border: none;
+  background-color: transparent; }
+  .popup__close::before, .popup__close::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    vertical-align: middle;
+    top: 8px;
+    left: -5px;
+    width: 30px;
+    height: 4px;
+    background-color: rgba(251, 86, 90, 0.3); }
+  .popup__close::before {
+    transform: rotate(45deg);
+    box-shadow: none; }
+  .popup__close::after {
+    transform: rotate(-45deg); }
+  .popup__close:hover::before, .popup__close:hover::after {
+    opacity: 60%;
+    cursor: pointer; }
+  .popup__close:focus::before, .popup__close:focus::after {
+    border: none; }
+  .popup__close:active::before, .popup__close:active::after {
+    opacity: 30%;
+    border: none; }
+
+.popup__form {
+  padding: 63px 99px 84px 100px; }
+
+.popup__field {
+  border: none;
+  padding-top: 37px; }
+
+.popup__title {
+  font-size: 45px;
+  line-height: 53px;
+  font-weight: bold; }
+
+.popup__inner-wrap {
+  display: flex;
+  margin-bottom: 34px; }
+
+.popup__item {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-right: 40px; }
+  .popup__item:last-child {
+    margin-right: 0; }
+  .popup__item--textarea {
+    width: 100%; }
+
+.popup__label {
+  font-weight: bold;
+  margin-bottom: 9px; }
+
+.popup__input {
+  padding: 16px 14px 16px 16px; }
+  .popup__input::-moz-placeholder {
+    font-size: 16px;
+    line-height: 18px;
+    color: rgba(68, 68, 68, 0.5); }
+  .popup__input::placeholder {
+    font-size: 16px;
+    line-height: 18px;
+    color: rgba(68, 68, 68, 0.5); }
+
+.popup__textarea {
+  font-family: inherit;
+  padding: 16px;
+  min-height: 118px;
+  margin-bottom: 47px; }
+  .popup__textarea::-moz-placeholder {
+    font-size: 16px;
+    line-height: 18px;
+    color: rgba(68, 68, 68, 0.5); }
+  .popup__textarea::placeholder {
+    font-size: 16px;
+    line-height: 18px;
+    color: rgba(68, 68, 68, 0.5); }
+
+.popup__btn {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: middle;
+  border: none;
+  background-color: #fb565a;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 17px 83px 15px;
+  border-radius: 3px; }
 
 /*# sourceMappingURL=style.css.map */

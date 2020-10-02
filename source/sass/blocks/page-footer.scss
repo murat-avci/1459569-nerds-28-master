@@ -1,7 +1,81 @@
-.page-footer__map {
-  max-width: 1440px;
+.page-footer {
+  position: relative;
 }
 
+.page-footer__address {
+  position: relative;
+}
+
+.page-footer__map {
+  max-width: 1440px;
+  width: 100%;
+  min-height: 416px;
+  background-image: url("../img/map-1.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: auto;
+}
+
+.page-footer__map-marker {
+  position: absolute;
+  top: 86px;
+  left: 822px;
+}
+
+.page-footer__address-card {
+  position: absolute;
+  top: 54px;
+  left: 140px;
+  background-color: $basic-white;
+  width: 319px;
+  height: 308px;
+  padding: 49px 50px 47px;
+}
+
+.page-footer__address-card-title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  margin-bottom: 23px;
+}
+
+.page-footer__address-card-text {
+  font-size: 16px;
+  line-height: 18px;
+  color: $special-gray2;
+  margin-bottom: 16px;
+}
+
+.page-footer__address-card-tel {
+  font-size: 16px;
+  line-height: 18px;
+  color: $special-gray2;
+  margin-bottom: 37px;
+}
+
+.page-footer__address-link {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: $special-red;
+  color: $basic-white;
+  padding: 17px 44px 15px;
+  border-radius: 3px;
+
+  &:hover {
+    background-color: $special-red1;
+  }
+
+  &:active {
+    background-color: $special-red2;
+    color: rgba($color: $basic-white, $alpha: 0.3);
+  }
+}
+
+
 .page-footer__social {
-  padding: 68px 0;
+  padding: 68px 140px;
 }
