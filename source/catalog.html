@@ -38,7 +38,7 @@
       </div>
       <h1 class="page-header__main-title">Магазин готовых шаблонов</h1>
     </header>
-    <main class="page-main__catalog">
+    <main class="page-main page-main__catalog">
       <form class="page-main__options options" action="#" method="GET">
         <fieldset class="options__item">
           <legend class="options__title">СТоимость:</legend>
@@ -109,19 +109,19 @@
           <li class="page-main__sort-item"><a class="page-main__sort-link" href="">По типу</a></li>
           <li class="page-main__sort-item"><a class="page-main__sort-link" href="">По названию</a></li>
           <li class="page-main__sort-item">
-            <a class="page-main__sort-link" href="">
-              <span class="visually-hidden">Вниз</span>
-              <svg width="11" height="10">
+            <a class="page-main__sort-link page-main__sort-link--active" href="">
+              <svg class="page-main__icon-dir" width="11" height="10">
                 <use xlink:href="img/sprite.svg#icon-down-dir"></use>
               </svg>
+              <span class="visually-hidden">Вниз</span>
             </a>
           </li>
           <li class="page-main__sort-item">
             <a class="page-main__sort-link" href="">
-              <span class="visually-hidden">Вверх</span>
-              <svg width="11" height="10">
+              <svg class="page-main__icon-dir" width="11" height="10">
                 <use xlink:href="img/sprite.svg#icon-up-dir"></use>
               </svg>
+              <span class="visually-hidden">Вверх</span>
             </a>
           </li>
         </ul>

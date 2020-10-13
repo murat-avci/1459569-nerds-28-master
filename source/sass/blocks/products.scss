@@ -5,20 +5,33 @@
 .products__item {
   position: relative;
 
-  &:first-child {
-    border-color: $basic-white;
+  &:hover {
     box-shadow: 0 6px 15px rgba(0, 1, 1, 0.25);
     border-radius: 5px;
+
+    .products__icon-browser {
+      opacity: 100%;
+    }
+
+    .products__modal {
+      display: block;
+    }
   }
 }
 
 .products__icon-browser {
-  margin-bottom: -4px;
+  fill: $special-gray8;
+  opacity: 12%;
 }
 
 .products__image {
   width: 100%;
+  transform: translateY(-5px);
   border: 1px solid $light-gray3;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+}
+
+.products__modal {
+  display: none;
 }

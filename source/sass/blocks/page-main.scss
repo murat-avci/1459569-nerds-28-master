@@ -62,6 +62,14 @@
     .page-main__sort-link {
       color: $basic-black;
       margin-right: 25px;
+
+      &:hover {
+        color: rgba($color: $basic-black, $alpha: 0.6);
+      }
+
+      &:active {
+        color: rgba($color: $basic-black, $alpha: 1);
+      }
     }
   }
 
@@ -97,6 +105,36 @@
   text-transform: uppercase;
   color: rgba($color: $basic-black, $alpha: 0.3);
   text-decoration: none;
+
+  &--active {
+    .page-main__icon-dir {
+      fill: $special-gray9;
+      opacity: 100%;
+    }
+  }
+
+  &:hover {
+    color: rgba($color: $basic-black, $alpha: 0.6);
+
+    .page-main__icon-dir {
+      fill: $light-gray2;
+      opacity: 100%;
+    }
+  }
+
+  &:active {
+    color: rgba($color: $basic-black, $alpha: 1);
+
+    .page-main__icon-dir {
+      fill: $special-gray9;
+      opacity: 100%;
+    }
+  }
+}
+
+.page-main__icon-dir {
+  fill: $light-gray2;
+  opacity: 20%;
 }
 
 .page-main__products {
